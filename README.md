@@ -32,7 +32,7 @@ Practice 100 Days 100 DSA Questions from easy to hard
 </tr>
   <tr>
 <td>4</td>
-<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day2-ValidAnagram.js">Valid Reverse String Git Code Link</a></td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day4-ValidReverseString.js">Valid Reverse String Git Code Link</a></td>
 <td><a href="https://leetcode.com/problems/reverse-string/solutions/4528170/javascript-solution-with-space-complexity-o-1/">Valid Reverse String LeetCode Solution</a></td>
 <td>String</td>
 </tr>
