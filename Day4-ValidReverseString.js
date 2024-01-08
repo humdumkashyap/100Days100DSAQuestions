@@ -32,7 +32,7 @@ var reverseString = function (s) {
 
 reverseString(s);
 
-//Sol:2
+//Sol:2   This one is basic and not recommended
 // var reverseString = function (s) {
 //   console.log(s.reverse());
 //   return s.reverse();
