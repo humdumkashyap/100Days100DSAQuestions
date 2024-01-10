@@ -45,7 +45,7 @@ Practice 100 Days 100 DSA Questions from easy to hard
 </tr>
   <tr>
 <td>6</td>
-<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day4-ValidReverseString.js">Add String Git Code Link</a></td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day6-AddStrings.js">Add String Git Code Link</a></td>
 <td><a href="https://leetcode.com/problems/add-strings/solutions/4542028/add-strings-solution-in-javascript/">Add String LeetCode Solution</a></td>
 <td>String</td>
 </tr>
