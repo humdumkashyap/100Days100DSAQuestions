@@ -1,4 +1,5 @@
 # 100 Days 100 DSA Questions
+
 Practice 100 Days 100 DSA Questions from easy to hard
 
 <table>
@@ -36,6 +37,17 @@ Practice 100 Days 100 DSA Questions from easy to hard
 <td><a href="https://leetcode.com/problems/reverse-string/solutions/4528170/javascript-solution-with-space-complexity-o-1/">Valid Reverse String LeetCode Solution</a></td>
 <td>String</td>
 </tr>
+  <tr>
+<td>5</td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day5-CommonPrefix.js">Longest Common Prefix String Git Code Link</a></td>
+<td><a href="https://leetcode.com/problems/longest-common-prefix/solutions/4542053/longest-common-prefix-solution-in-javascript/">Longest Common Prefix String LeetCode Solution</a></td>
+<td>String</td>
+</tr>
+  <tr>
+<td>6</td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day4-ValidReverseString.js">Add String Git Code Link</a></td>
+<td><a href="https://leetcode.com/problems/add-strings/solutions/4542028/add-strings-solution-in-javascript/">Add String LeetCode Solution</a></td>
+<td>String</td>
+</tr>
 </tbody>
 </table>
-
