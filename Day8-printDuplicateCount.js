@@ -11,8 +11,9 @@
 // s, count = 2
 
 /**********************/
-let str = "geeksforgeeks";
+//let str = "geeksforgeeks";
 
+let str = ["aaa", "bbb", "ccc", "bbb", "aaa", "aaa"];
 function printDuplicateCount(str) {
   let charCount = {};
   for (let i = 0; i < str.length; i++) {
