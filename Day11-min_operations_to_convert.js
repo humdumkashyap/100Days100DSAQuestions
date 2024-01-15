@@ -11,7 +11,7 @@
 //              Pick A and insert at front, BEACD => ABECD
 //              Pick E and insert at front, ABECD => EABCD
 
-function minOperations(A, B) {
+function minOperationsToConvert(A, B) {
   if (A.length !== B.length) return -1;
 
   let count = 0;
@@ -28,5 +28,5 @@ function minOperations(A, B) {
   return count;
 }
 
-console.log(minOperations("EACBD", "EABCD"));
-console.log(minOperations("ABD", "BAD"));
+console.log(minOperationsToConvert("EACBD", "EABCD"));
+console.log(minOperationsToConvert("ABD", "BAD"));
