@@ -49,5 +49,33 @@ Practice 100 Days 100 DSA Questions from easy to hard
 <td><a href="https://leetcode.com/problems/add-strings/solutions/4542028/add-strings-solution-in-javascript/">Add String LeetCode Solution</a></td>
 <td>String</td>
 </tr>
+<tr>
+<td>7</td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day7-IsomorphicStrings.js">Isomorphic Strings Git Code Link</a></td>
+<td><a href="https://www.geeksforgeeks.org/check-if-two-given-strings-are-isomorphic-to-each-other/">Isomorphic Strings Geeksforgeeks Solution</a></td>
+<td>String</td>
+
+</tr>
+
+<tr>
+<td>8</td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day8-printDuplicateCount.js">Print Duplicate Count Git Code Link</a></td>
+<td><a href="https://www.geeksforgeeks.org/print-all-the-duplicates-in-the-input-string/">Print Duplicate Count LeetCode Solution</a></td>
+<td>String</td>
+</tr>
+
+<tr>
+<td>9</td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day6-AddStrings.js">Add String Git Code Link</a></td>
+<td><a href="https://leetcode.com/problems/add-strings/solutions/4542028/add-strings-solution-in-javascript/">Add String LeetCode Solution</a></td>
+<td>String</td>
+</tr>
+
+<tr>
+<td>10</td>
+<td><a href="https://github.com/humdumkashyap/100Days100DSAQuestions/blob/main/Day6-AddStrings.js">Add String Git Code Link</a></td>
+<td><a href="https://leetcode.com/problems/add-strings/solutions/4542028/add-strings-solution-in-javascript/">Add String LeetCode Solution</a></td>
+<td>String</td>
+</tr>
 </tbody>
 </table>
