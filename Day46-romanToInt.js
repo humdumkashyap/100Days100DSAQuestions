@@ -41,3 +41,52 @@
 // s contains only the characters ('I', 'V', 'X', 'L', 'C', 'D', 'M').
 // It is guaranteed that s is a valid roman numeral in the range [1, 3999].
 // Link: https://leetcode.com/problems/roman-to-integer/description/
+
+function romanToInt(s) {
+  let obj = {
+    I: 1,
+    V: 5,
+    X: 10,
+    L: 50,
+    C: 100,
+    D: 500,
+    M: 1000,
+  };
+  //   I can be placed before V (5) and X (10) to make 4 and 9.
+  // X can be placed before L (50) and C (100) to make 40 and 90.
+  // C can be placed before D (500) and M (1000) to make 400 and 900.
+
+  let sum = 0;
+  for (let i = 0; i < s.length; i++) {
+    if ((s[i] == "V" && s[i - 1] == "I") || (s[i] == "X" && s[i - 1] == "I")) {
+      sum += -2;
+    }
+    if ((s[i] == "L" && s[i - 1] == "X") || (s[i] == "C" && s[i - 1] == "X")) {
+      sum += -20;
+    }
+    if ((s[i] == "D" && s[i - 1] == "C") || (s[i] == "M" && s[i - 1] == "C")) {
+      sum += -200;
+    }
+
+    if (s[i] == "I") {
+      sum += 1;
+    } else if (s[i] == "V") {
+      sum += 5;
+    } else if (s[i] == "X") {
+      sum += 10;
+    } else if (s[i] == "L") {
+      sum += 50;
+    } else if (s[i] == "C") {
+      sum += 100;
+    } else if (s[i] == "D") {
+      sum += 500;
+    } else if (s[i] == "M") {
+      sum += 1000;
+    }
+  }
+
+  return sum;
+}
+
+let s = "XIV";
+console.log(romanToInt(s));
