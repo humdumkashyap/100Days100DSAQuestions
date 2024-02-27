@@ -19,24 +19,28 @@
 // 1 <= s.length <= 1000
 // s consist of only digits and English letters.
 
-let arr = [];
-let substr;
-let substringvalue;
+function longestPalindrome(s) {
+  let arr = [];
+  let substr;
+  let substringvalue;
 
-for (let i = 0; i <= s.length; i++) {
-  for (let j = i + 1; j <= s.length; j++) {
-    substringvalue = s.substring(i, j);
-    if (!arr.includes(substringvalue)) {
-      arr.push(s.substring(i, j));
+  for (let i = 0; i <= s.length; i++) {
+    for (let j = i + 1; j <= s.length; j++) {
+      substringvalue = s.substring(i, j);
+      if (!arr.includes(substringvalue)) {
+        arr.push(s.substring(i, j));
+      }
+    }
+  }
+  arr.sort((a, b) => b.length - a.length);
+  console.log(arr);
+  for (let i = 0; i < arr.length; i++) {
+    substr = arr[i].split("").reverse().join("");
+    console.log(substr, "substr");
+    if (arr[i] == substr) {
+      return substr;
     }
   }
 }
-arr.sort((a, b) => b.length - a.length);
-console.log(arr);
-for (let i = 0; i < arr.length; i++) {
-  substr = arr[i].split("").reverse().join("");
-  console.log(substr, "substr");
-  if (arr[i] == substr) {
-    return substr;
-  }
-}
+let s = "cbbd";
+console.log(longestPalindrome(s));
