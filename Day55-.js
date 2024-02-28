@@ -27,17 +27,25 @@
 
 // Link: https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
 
-function minRemoveToMakeValid(s) {
-  let stack = [];
-
+var minRemoveToMakeValid = function (s) {
+  const stack = [];
+  let ansStr = s.split("");
   for (let i = 0; i < s.length; i++) {
-    console.log(s[i]);
     if (s[i] == "(") {
-      stack.push(")");
+      stack.push(i);
+    } else if (s[i] == ")") {
+      if (stack.length != 0) {
+        stack.pop();
+      } else {
+        ansStr[i] = "";
+      }
     }
   }
-
-  console.log(stack);
-}
+  for (let i = 0; i < stack.length; i++) {
+    let ind = stack[i];
+    ansStr[ind] = "";
+  }
+  return ansStr.join("");
+};
 
 console.log(minRemoveToMakeValid("lee(t(c)o)de)"));
