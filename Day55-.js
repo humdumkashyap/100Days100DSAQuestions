@@ -27,25 +27,56 @@
 
 // Link: https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/description/
 
+// var minRemoveToMakeValid = function (s) {
+//   const stack = [];
+//   let ansStr = s.split("");
+//   for (let i = 0; i < s.length; i++) {
+//     if (s[i] == "(") {
+//       stack.push(i);
+//     } else if (s[i] == ")") {
+//       if (stack.length != 0) {
+//         stack.pop();
+//       } else {
+//         ansStr[i] = "";
+//       }
+//     }
+//   }
+//   for (let i = 0; i < stack.length; i++) {
+//     let ind = stack[i];
+//     ansStr[ind] = "";
+//   }
+//   return ansStr.join("");
+// };
+
 var minRemoveToMakeValid = function (s) {
-  const stack = [];
-  let ansStr = s.split("");
-  for (let i = 0; i < s.length; i++) {
-    if (s[i] == "(") {
-      stack.push(i);
-    } else if (s[i] == ")") {
-      if (stack.length != 0) {
-        stack.pop();
+  let finalStr = "";
+  let count = 0;
+
+  for (let char of s) {
+    if (char == "(") {
+      count++;
+    } else if (char == ")") {
+      if (count == 0) {
+        continue;
       } else {
-        ansStr[i] = "";
+        count--;
       }
     }
+    finalStr += char;
   }
-  for (let i = 0; i < stack.length; i++) {
-    let ind = stack[i];
-    ansStr[ind] = "";
+
+  let str = "";
+  for (let i = finalStr.length - 1; i >= 0; i--) {
+    let char = finalStr[i];
+    if (char === "(" && count > 0) {
+      count--;
+      continue;
+    }
+    str = char + str;
   }
-  return ansStr.join("");
+
+  return str;
 };
 
 console.log(minRemoveToMakeValid("lee(t(c)o)de)"));
+console.log(minRemoveToMakeValid("))(("));
