@@ -29,19 +29,26 @@
 // Link: https://www.geeksforgeeks.org/problems/minimum-swaps-for-bracket-balancing2704/1
 
 function minimumNumberOfSwaps(s) {
-  let count = 0;
-  let str = "";
+  let open = 0;
+  let close = 0;
+  let fault = 0;
+  let swaps = 0;
+
   for (let i = 0; i < s.length; i++) {
-    if (s[i] == "[" && s[i + 1] == "]") {
-      str = s[i] + s[i + 1] + str;
-      console.log(str, count, i, "inner");
-      i++;
-      continue;
-    } else if (s[i] == "]" && s[i + 1] != "[") {
-      count++;
-      console.log(str, count, "i--", i);
+    if (s[i] === "[") {
+      open++;
+      if (fault > 0) {
+        swaps += fault;
+        fault--;
+      }
+    } else if (s[i] === "]") {
+      close++;
+      fault = close - open;
     }
   }
+
+  return swaps;
 }
 
-minimumNumberOfSwaps("[]][][");
+console.log(minimumNumberOfSwaps("[]][][")); // Outputs: 2
+console.log(minimumNumberOfSwaps("[[][]]")); // Outputs: 0
