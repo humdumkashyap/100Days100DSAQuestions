@@ -51,4 +51,4 @@ function minimumNumberOfSwaps(s) {
 }
 
 console.log(minimumNumberOfSwaps("[]][][")); // Outputs: 2
-console.log(minimumNumberOfSwaps("[[][]]")); // Outputs: 0
+console.log(minimumNumberOfSwaps("[[][]]")); // Outputs: 0  
