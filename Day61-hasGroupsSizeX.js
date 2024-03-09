@@ -38,9 +38,25 @@ function hasGroupsSizeX(deck) {
     }
   }
 
+  let arr = Object.values(unique);
+  let minValue = Math.min.apply(0, arr);
+  console.log("arr--", arr, "minValue--", minValue);
+  let count = 0;
+  for (let i = 2; i < arr.length; i++) {
+    console.log(arr[i] % i, "sdsdsd");
+    if (arr[i] % i == 0) {
+      count++;
+    }
+  }
+
+  console.log(count, "countt");
+
+  console.log(unique);
   for (i in unique) {
-    if (typeof unique === "object" && !Array.isArray(unique)) {
-      return Object.values(unique).every((value) => value % 2 == 0);
+    if (unique[i] == 1) {
+      return false;
+    } else if (typeof unique === "object" && !Array.isArray(unique)) {
+      return Object.values(unique).every((value) => value % minValue == 0);
     } else {
       return false;
     }
