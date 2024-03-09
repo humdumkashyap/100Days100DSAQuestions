@@ -22,6 +22,7 @@ function duplicateZeros(arr) {
     if (arr[i] == 0) {
       arr.splice(i, 0, 0);
       arr.pop();
+      //   arr.splice(-1)
       console.log(arr);
       i++;
     }
