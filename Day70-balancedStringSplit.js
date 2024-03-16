@@ -48,3 +48,5 @@ var balancedStringSplit = function (s) {
 
 let s = "LLLLRRRR";
 console.log(balancedStringSplit(s));
+
+
