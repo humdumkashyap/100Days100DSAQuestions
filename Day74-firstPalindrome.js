@@ -27,6 +27,9 @@ function firstPalindrome(words) {
   }
 }
 
+
+
+
 words = ["abc", "car", "ada", "racecar", "cool"];
 
 console.log(firstPalindrome(words));
