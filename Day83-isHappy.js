@@ -44,5 +44,5 @@ function isHappy(n) {
   return n === 1;
 }
 
-console.log(isHappy(19));
-console.log(isHappy(2));
+console.log(isHappy(19)); //true
+console.log(isHappy(2)); //false
