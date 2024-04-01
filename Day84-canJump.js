@@ -17,6 +17,10 @@
 
 // link: https://leetcode.com/problems/jump-game/description/?envType=study-plan-v2&envId=top-interview-150
 
-function canJump(nums) {}
+function canJump(nums) {
+
+
+    
+}
 
 console.log(canJump([2, 3, 1, 1, 4])); // true
