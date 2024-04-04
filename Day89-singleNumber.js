@@ -34,4 +34,4 @@ function singleNumber(nums) {
 }
 
 let nums = [2, 1, 2];
-console.log(singleNumber(nums));
+console.log(singleNumber(nums)); //1
