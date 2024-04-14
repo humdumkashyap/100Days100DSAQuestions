@@ -22,3 +22,6 @@ var buddyStrings = function (s, goal) {
 
 console.log(buddyStrings("ab", "ba")); //true
 console.log(buddyStrings("ab", "ab")); //false
+
+
+
