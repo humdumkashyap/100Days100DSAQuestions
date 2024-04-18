@@ -49,3 +49,4 @@ function faultyKeyboard(s) {
 
 console.log(finalString("string")); // "rtsng"
 console.log(finalString("poiinter")); // "ponter"
+console.log(finalString("")); // ""
