@@ -31,3 +31,4 @@ var isAnagram = function (s, t) {
 };
 
 isAnagram(s, t);
+console.log(isAnagram(s, t));
