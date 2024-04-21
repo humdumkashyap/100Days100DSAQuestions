@@ -15,3 +15,7 @@ var isValid = function (s) {
   }
   return newArr.length === 0 ? true : false;
 };
+
+console.log(isValid("()")); // true
+console.log(isValid("()[]{}")); // true
+console.log(isValid("(]")); // false
