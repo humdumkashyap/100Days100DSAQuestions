@@ -32,3 +32,5 @@ var isAnagram = function (s, t) {
 
 isAnagram(s, t);
 console.log(isAnagram(s, t));
+console.log(isAnagram("rat", "car"));
+console.log(isAnagram("a", "ab"));
