@@ -30,7 +30,9 @@ var reverseString = function (s) {
   console.log(s);
 };
 
-reverseString(s);
+console.log(reverseString(s));
+console.log(reverseString(["H", "a", "n", "n", "a", "h"]));
+console.log(reverseString(["a", "b", "c", "d", "e", "f"]));
 
 //Sol:2   This one is basic and not recommended
 // var reverseString = function (s) {
