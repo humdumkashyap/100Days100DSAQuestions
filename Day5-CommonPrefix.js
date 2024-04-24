@@ -31,3 +31,5 @@ var longestCommonPrefix = function (strs) {
 };
 
 console.log(longestCommonPrefix(strs));
+console.log(longestCommonPrefix(["dog", "racecar", "car"]));
+console.log(longestCommonPrefix(["a", "b", "c", "d", "e", "f"]));
