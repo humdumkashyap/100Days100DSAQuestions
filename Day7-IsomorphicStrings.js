@@ -30,8 +30,10 @@ function isIsomorphic(s, t) {
 }
 
 console.log(isIsomorphic("egg", "add"));
-
-let x = "hello";
-let y = new String("hello");
-console.log(x == y);
-console.log(x !== y);
+console.log(isIsomorphic("foo", "bar"));
+console.log(isIsomorphic("paper", "title"));
+console.log(isIsomorphic("badc", "baba"));
+// let x = "hello";
+// let y = new String("hello");
+// console.log(x == y);
+// console.log(x !== y);
