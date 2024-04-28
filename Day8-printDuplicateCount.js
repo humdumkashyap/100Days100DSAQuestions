@@ -31,4 +31,6 @@ function printDuplicateCount(str) {
   }
 }
 
-printDuplicateCount(str);
+console.log(printDuplicateCount(str));
+console.log(printDuplicateCount("geeksforgeeks"));
+console.log(printDuplicateCount("hello"));
