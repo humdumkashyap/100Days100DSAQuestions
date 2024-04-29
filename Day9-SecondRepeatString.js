@@ -39,3 +39,14 @@ function secFrequent(arr, n) {
 
 let arr = ["aaa", "bbb", "ccc", "bbb", "aaa", "aaa"];
 console.log(secFrequent(arr, 6));
+console.log(secFrequent(["aaa", "bbb", "ccc", "bbb", "aaa", "aaa"], 6));
+console.log(secFrequent(["aaa", "bbb", "ccc", "bbb", "aaa", "aaa", "ccc"], 7));
+console.log(
+  secFrequent(["aaa", "bbb", "ccc", "bbb", "aaa", "aaa", "ccc", "bbb"], 8)
+);
+console.log(
+  secFrequent(
+    ["aaa", "bbb", "ccc", "bbb", "aaa", "aaa", "ccc", "bbb", "bbb"],
+    9
+  )
+);
