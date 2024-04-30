@@ -17,4 +17,7 @@ function IndexOfTheFirstOccurrence(haystack, needle) {
   return haystack.indexOf(needle);
 }
 
-IndexOfTheFirstOccurrence("sadbutsad", "sad");
+console.log(IndexOfTheFirstOccurrence("sadbutsad", "sad"));
+console.log(IndexOfTheFirstOccurrence("leetcode", "leeto"));
+console.log(IndexOfTheFirstOccurrence("leetcode", "leet"));
+console.log(IndexOfTheFirstOccurrence("leetcode", "code"));
