@@ -30,3 +30,5 @@ function minOperationsToConvert(A, B) {
 
 console.log(minOperationsToConvert("EACBD", "EABCD"));
 console.log(minOperationsToConvert("ABD", "BAD"));
+console.log(minOperationsToConvert("ABD", "BAC"));
+console.log(minOperationsToConvert("ABD", "BDA"));
