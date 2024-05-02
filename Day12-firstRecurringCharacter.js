@@ -15,3 +15,6 @@ function firstRecurringCharacter(str) {
 
 console.log(firstRecurringCharacter("acbbac"));
 console.log(firstRecurringCharacter("abcdef"));
+console.log(firstRecurringCharacter("abcdefa"));
+console.log(firstRecurringCharacter("abcdefb"));
+console.log(firstRecurringCharacter("abcdefc"));
