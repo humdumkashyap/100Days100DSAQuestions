@@ -26,3 +26,6 @@ function minFlips(s) {
 }
 
 console.log(minFlips("01001001101"));
+console.log(minFlips("111000"));
+console.log(minFlips("01001001101"));
+console.log(minFlips("111000"));
