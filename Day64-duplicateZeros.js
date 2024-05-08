@@ -30,5 +30,9 @@ function duplicateZeros(arr) {
   return arr;
 }
 
-let arr = [1, 0, 2, 3, 0, 4, 5, 0];
-console.log(duplicateZeros(arr));
+
+console.log(duplicateZeros([1, 0, 2, 3, 0, 4, 5, 0]));
+console.log(duplicateZeros([1, 2, 3]));
+console.log(duplicateZeros([1, 0, 2, 3, 0, 4, 5, 0]));
+console.log(duplicateZeros([1, 2, 3]));
+
