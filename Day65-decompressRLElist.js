@@ -42,4 +42,8 @@ function decompressRLElist(nums) {
 }
 
 let nums = [1, 1, 2, 3];
-console.log(decompressRLElist(nums));
+console.log(decompressRLElist([1, 1, 2, 3]));
+console.log(decompressRLElist([1, 2, 3, 4]));
+console.log(decompressRLElist([1, 1, 2, 3]));
+console.log(decompressRLElist([1, 2, 3, 4]));
+
