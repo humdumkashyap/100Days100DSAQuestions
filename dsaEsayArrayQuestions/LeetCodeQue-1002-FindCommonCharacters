@@ -1,0 +1,43 @@
+// 1002. Find Common Characters - Easy
+
+// Given a string array words, return an array of all characters that show up in all strings within the words (including duplicates). You may return the answer in any order.
+
+// Example 1:
+
+// Input: words = ["bella","label","roller"]
+// Output: ["e","l","l"]
+// Example 2:
+
+// Input: words = ["cool","lock","cook"]
+// Output: ["c","o"]
+
+// Constraints:
+
+// 1 <= words.length <= 100
+// 1 <= words[i].length <= 100
+// words[i] consists of lowercase English letters.
+//Link:https://leetcode.com/problems/find-common-characters/
+
+var commonChars = function (words) {
+  let arr = words[0].split("");
+  let finalArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let count = 0;
+    for (let j = 0; j < words.length; j++) {
+      if (words[j].includes(arr[i])) {
+        let newWord = words[j].replace(arr[i], "-");
+        words.splice(j, 1, newWord);
+        count++;
+        if (count === words.length) {
+          finalArr.push(arr[i]);
+        }
+      }
+    }
+  }
+
+  return finalArr;
+};
+
+console.log(commonChars(["bella", "label", "roller"]));
+console.log(commonChars(["cool", "lock", "cook"]));
+console.log(commonChars(["hello", "world", "leetcode"]));
