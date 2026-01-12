@@ -12,4 +12,4 @@ function largestNumber(arr) {
   return maxNumb;
 }
 // console.log(largestNumber([2, -6, 4, 8, 1, -9]));
-console.log(largestNumber([2, -6, 4, 8, 11, 90]));
+// console.log(largestNumber([2, -6, 4, 8, 11, 90]));
