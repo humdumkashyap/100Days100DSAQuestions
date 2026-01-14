@@ -18,7 +18,9 @@ function isPalindrome(x) {
     return true;
   }
 }
-
+console.log(isPalindrome(0));
+console.log(isPalindrome(1));
+console.log(isPalindrome(11));
 console.log(isPalindrome(121));
 console.log(isPalindrome(1221));
 console.log(isPalindrome(12331));
